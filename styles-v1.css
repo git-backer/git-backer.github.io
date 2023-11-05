@@ -14,16 +14,27 @@ header {
     background-color: #085f63; /* Grecian blue */
     color: #fff;
     padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Center the navigation links */
+    align-items: center;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    text-align: center; /* Center the text within the logo */
+    padding-bottom: 20px;
+}
+
+nav {
+    flex: 1; /* Grow to take available space */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    align-items: center; /* Center the navigation links vertically */
 }
 
 .nav-links li {
@@ -41,6 +52,9 @@ header {
     color: #fff;
     padding: 100px 0;
     text-align: center;
+    display: flex; /* Center content horizontally */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .hero-content h1 {
@@ -68,3 +82,186 @@ header {
     background-color: #d8ccc8; /* Coral */
 }
 /* Additional sections' styling can be added here */
+
+/* Feature Section Styles */
+.feature-section {
+    background-color: #fff; /* White background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature-section h2 {
+    font-size: 24px;
+    color: #2F496e; /* Sea */
+    margin-bottom: 20px;
+}
+
+/* Feature Card Styles */
+.feature-card {
+    display: flex;
+    background-color: #F4EADE; /* Plaster */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 10px; /* Add spacing around cards and between cards */
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-image {
+    flex: 40%;
+    padding: 20px;
+}
+
+.feature-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.feature-details {
+    flex: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.feature-details h3 {
+    font-size: 20px;
+    color: #000; /* Black text */
+    margin-bottom: 10px;
+}
+
+.feature-details p {
+    font-size: 16px;
+    color: #000; /* Black text */
+    margin-top: 10px;
+}
+
+
+/* Use Cases Section Styles */
+.use-cases-section {
+    background-color: #4cb5ae;; /* White background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.use-cases-section h2 {
+    font-size: 24px;
+    color: #2F496e; /* Sea */
+    margin-bottom: 20px;
+}
+
+/* Use Case Card Styles */
+.use-case-card {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.use-case-card:hover {
+    transform: scale(1.05);
+}
+
+.use-case-image {
+    flex: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Vertically align the image */
+}
+
+.use-case-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.use-case-details {
+    flex: 60%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically align the details */
+}
+
+.use-case-title {
+    font-size: 24px;
+    color: #000; /* White text */
+    margin-bottom: 10px; /* Add spacing below title */
+}
+
+.use-case-details p {
+    font-size: 16px;
+    color: #000; /* White text */
+    margin-top: 10px; /* Add spacing above description */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #ffff; /* Coral background color */
+    padding: 50px 0;
+    text-align: center;
+    color: #2F496e; /* Sea color for text */
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    color: #2F496e;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #2F496e;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-section label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #2F496e;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section input[type="submit"] {
+    background-color: #Ed8c72; /* Coral */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #e5593f; /* Slightly darker Coral on hover */
+}
+
+/* Separator Style */
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #Ed8c72; /* Coral */
+    margin: 20px 0;
+}

@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitBackup - Simple Git-based Backup Application</title>
     <link rel="stylesheet" href="styles-v1.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">GitBackup</div>
+            <div class="logo">Backer</div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#download">Download</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,15 +29,106 @@
     </section>
 
     <section id="features" class="feature-section">
-        <!-- Feature details here -->
+        <h2>Features</h2>
+        <div class="feature-card">
+            <div class="feature-image">
+                <img src="assets/multiple.png" alt="Feature 1">
+            </div>
+            <div class="feature-details">
+                <h3>Backup multiple folders to multiple destinations</h3>
+                <p>Each backer configuration is treated independently. Each folder can be backed up to different git repository destination.</p>
+                <p>Backups run in parallel in the background effortlessly.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-image">
+                <img src="assets/git-n-ssh-keys.png" alt="Feature 2">
+            </div>
+            <div class="feature-details">
+                <h3>Simplified SSH Authentication</h3>
+                <p>Simply configure your SSH key path for the repository. If you are backing up multiple folders to multiple remote destinations, you can configure different SSH keys.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-image">
+                <img src="assets/fs-notify.png" alt="Feature 3">
+            </div>
+            <div class="feature-details">
+                <h3>Leverages File system notifications</h3>
+                <p>Efficiently identifies file changes using file system notifications instead of polling. This goes nice on your CPU.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-image">
+                <img src="assets/start-stop.png" alt="Feature 4">
+            </div>
+            <div class="feature-details">
+                <h3>Start/Stop an individual backup as you wish</h3>
+                <p>You can still maintain a list of backup configurations and run the one you need and stop the rest.</p>
+                <p>Batteries included like Edit, Duplicate and Delete a configuration quickly.</p>
+            </div>
+        </div>
     </section>
+
 
     <section id="download" class="download-section">
         <!-- Download links and instructions here -->
     </section>
 
+    <section id="use-cases" class="use-cases-section">
+        <h2>Product Use Cases</h2>
+
+        <div class="use-case-card">
+            <div class="use-case-image">
+                <img src="assets/1.png" alt="Use Case 1">
+            </div>
+            <div class="use-case-details">
+                <h3 class="use-case-title">Backup your offline notes from your favourite apps</h3>
+                <p>Offline people love offline note taking apps like obsidian. You can use Git backer to automatically backup your obsidian vaults to your private git repositories for safe keeping.</p>
+            </div>
+        </div>
+
+        <div class="use-case-card">
+            <div class="use-case-image">
+                <img src="assets/2.png" alt="Use Case 2">
+            </div>
+            <div class="use-case-details">
+                <h3 class="use-case-title">Backup screenshots/mindmaps</h3>
+                <p>When you are working on a project or any idea, Often you would like to take screenshots or create a mindmap of each and every step. Back that up to your git repository.</p>
+            </div>
+        </div>
+
+        <div class="use-case-card">
+            <div class="use-case-image">
+                <img src="assets/3.png" alt="Use Case 3">
+            </div>
+            <div class="use-case-details">
+                <h3 class="use-case-title">Offline password managers</h3>
+                <p>When you would like to backup your encrypted password manager database file to a private repository. That can be backed up too.</p>
+            </div>
+        </div>
+    </section>
+
+
     <section id="contact" class="contact-section">
-        <!-- Contact information and form here -->
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please fill out the form below.</p>
+
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
     </section>
 
     <footer>
