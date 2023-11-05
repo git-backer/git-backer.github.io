@@ -103,6 +103,7 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px 10px; /* Add spacing around cards and between cards */
+    justify-content: flex-start; /* Align feature details to the start (left) */
 }
 
 .feature-card:hover {
@@ -123,7 +124,10 @@ nav {
 .feature-details {
     flex: 60%;
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically align the details */
 }
 
 .feature-details h3 {
