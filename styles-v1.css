@@ -85,7 +85,7 @@ nav {
 
 /* Feature Section Styles */
 .feature-section {
-    background-color: #fff; /* White background */
+    background-color: #F4EADE; /* Plaster */
     padding: 50px 0;
     text-align: center;
 }
@@ -99,11 +99,11 @@ nav {
 /* Feature Card Styles */
 .feature-card {
     display: flex;
-    background-color: #F4EADE; /* Plaster */
+    background-color: #FFF; /* White */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 20px 10px; /* Add spacing around cards and between cards */
-    justify-content: flex-start; /* Align feature details to the start (left) */
+    margin: 20px; /* Add spacing around cards and between cards */
+    transition: transform 0.3s;
 }
 
 .feature-card:hover {
@@ -206,7 +206,7 @@ nav {
 
 /* Contact Section Styles */
 .contact-section {
-    background-color: #ffff; /* Coral background color */
+    background-color: #F4EADE; /* Plaster */
     padding: 50px 0;
     text-align: center;
     color: #2F496e; /* Sea color for text */
